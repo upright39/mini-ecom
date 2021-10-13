@@ -6,6 +6,7 @@ body{font-family: 'Roboto', sans-serif;}
 :root{
  --primary-white:#fff; 
  --primary-orange:#f9ab00;
+ --primary-red:#f90036;
 }
 
 /*********************NAVBAR**********************/
@@ -29,5 +30,37 @@ border-top: 0.1875rem solid var(--primary-orange)
 }
 
 /*********************HEADER**********************/
+.header-wrapper{
 
+    position: relative;
+    background: url(header2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.main-wrapper{
+   
+   display: flex; 
+   flex-direction: column;
+   justify-content: centers;
+   align-items: center;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding-top: 100px;
+}
+
+.main-wrapper h1{
+    text-transform: uppercase;
+    color: #680c2f;
+}
+
+/*********************TYPED-TEXT**********************/
+.typed-text{
+font-size: 2rem;
+color: var(--primary-red );
+font-family: monospace;
+font-style: italic;
+  
+}
 
