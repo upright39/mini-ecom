@@ -1,11 +1,38 @@
-import React from 'react'
 
-function Context() {
+import React,{useContext,useEffect,useState} from 'react'
+const AppContext= React.createContext()
+
+
+function AppProvider({children}) {
+const [goods,setGoods]=useState([])
+
+  useEffect(() => {
+      data()   
+  }, [])
+
+   const data = async()=>{
+    let result = await fetch("http://localhost:8000/api/productlist")
+       result= await result.json()
+       setGoods(result)
+       
+   }
+   
+
+
+
     return (
-        <div>
-            <h5>my context</h5>
-        </div>
+        
+            <AppContext.Provider 
+              value={{goods}}
+            >
+                 {children}
+            </AppContext.Provider>
+        
     )
 }
 
-export default Context
+export const useGlobalContext=()=>{
+    return useContext(AppContext)
+}
+
+export  {AppContext, AppProvider}

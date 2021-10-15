@@ -1,9 +1,14 @@
 import React from 'react'
 
+
+
 const Footer = () => {
+     
     return (
-        <div>
-            <h3>my footer</h3>
+        <div className="footer-wrapper">
+            <div>lorem is </div>
+            <p>lorem is not</p>
+            <div>lorem is not eA</div>
         </div>
     )
 }

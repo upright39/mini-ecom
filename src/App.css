@@ -6,11 +6,14 @@ body{font-family: 'Roboto', sans-serif;}
 :root{
  --primary-white:#fff; 
  --primary-orange:#f9ab00;
- --primary-red:#f90036;
+ --primary-red:#df2950;
+ --primary-gray:#f3ecee;
 }
 
-/*********************NAVBAR**********************/
-.logo{width:5rem;}
+/*********************NAVBAR-LOGO**********************/
+.logo{width:5rem;
+    border-radius: 20%;
+ }
 
 /*********************NAVBAR LINK**********************/
 .navbar-nav .nav-link{
@@ -43,16 +46,16 @@ border-top: 0.1875rem solid var(--primary-orange)
    
    display: flex; 
    flex-direction: column;
-   justify-content: centers;
+   justify-content: center;
    align-items: center;
    text-align: center;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family:  sans-serif;
    padding-top: 100px;
 }
 
 .main-wrapper h1{
     text-transform: uppercase;
-    color: #680c2f;
+    color: #0c0d68;
 }
 
 /*********************TYPED-TEXT**********************/
@@ -64,3 +67,30 @@ font-style: italic;
   
 }
 
+/*********************CARD-BUTTON-PRICE-WRAPPER**********************/
+.button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;    
+}
+.button-wrapper h4{
+    padding-top: 10px;
+
+}
+
+/*********************CARD-DESIGN**********************/
+.card{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    margin-right:4rem;
+}
+/*********************FOOTER-WRAPPER**********************/
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-gray);
+    font-family:  sans-serif;
+    
+    
+}

@@ -12,7 +12,7 @@ import Basket from './pages/Basket';
 
 function App() {
   return (
-    <div>
+    <div className="container-fluid">
       <Router>
         <Navbar />
         <Switch>
@@ -28,6 +28,7 @@ function App() {
           <Route path="/basket">
             <Basket />
           </Route>
+
         </Switch>
       </Router>
     </div>
