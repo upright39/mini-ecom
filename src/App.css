@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
-body{font-family: 'Roboto', sans-serif;}
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
 
 /*********************VARIABLES**********************/
 :root{
@@ -8,6 +13,7 @@ body{font-family: 'Roboto', sans-serif;}
  --primary-orange:#f9ab00;
  --primary-red:#df2950;
  --primary-gray:#f3ecee;
+ --primary-black:black;
 }
 
 /*********************NAVBAR-LOGO**********************/
@@ -36,10 +42,10 @@ border-top: 0.1875rem solid var(--primary-orange)
 .header-wrapper{
 
     position: relative;
-    background: url(header2.jpg)no-repeat;
+    background: url(./images/header2.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 100vh;
 }
 
 .main-wrapper{
@@ -67,30 +73,48 @@ font-style: italic;
   
 }
 
-/*********************CARD-BUTTON-PRICE-WRAPPER**********************/
+/*********************CARD-BUTTON-WRAPPER**********************/
 .button-wrapper{
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10%;    
+    align-items:center;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
+    /* border-radius: 10%;     */
 }
-.button-wrapper h4{
-    padding-top: 10px;
+.button-wrapper h6{
+    
+    color:var(--primary-orange);
+    letter-spacing:1.3px;
 
+}
+/*********************CARD-BUTTON**********************/
+.button{
+    padding: 4.5px;
+    background-color: rgb(15, 116, 28);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;   
+    margin-left: 10px;
+    letter-spacing: 0.7px;
+    font-size: small;
+    font-family: cursive;
+    
 }
 
 /*********************CARD-DESIGN**********************/
 .card{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
-    margin-right:4rem;
+    margin-right:4re;
 }
 /*********************FOOTER-WRAPPER**********************/
 
 .footer-wrapper{
     display: flex;
     justify-content: space-around;
-    background-color: var(--primary-gray);
+    background-color: var(--primary-black);
     font-family:  sans-serif;
-    
+    height: 100px;
+    align-items:center; 
+    color: var(--primary-white) 
     
 }

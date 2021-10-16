@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar, Container, Nav, FormControl, Form } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 
-import mylogo2 from "../mylogo2.jpg";
+import mylogo2 from "../images/mylogo2.jpg";
 
 const Navber = () => {
     return (
@@ -18,7 +18,7 @@ const Navber = () => {
 
                     <Nav className="me-auto my-2 my-lg-0" >
                         <Nav.Link as={Link} to={'/'}>HOME PAGE</Nav.Link>
-                        <Nav.Link as={Link} to={'/contac'}>CONTACT US</Nav.Link>
+                        <Nav.Link as={Link} to={'/contact'}>CONTACT US</Nav.Link>
                         <Nav.Link as={Link} to={'/about'}>ABOUT US</Nav.Link>
                         <Nav.Link as={Link} to={'/basket'}>BASKET</Nav.Link>
                     </Nav>
@@ -35,7 +35,7 @@ const Navber = () => {
                 </Navbar.Collapse>
 
             </Container>
-            <Nav.Link as={Link} to={'/basket'}>BASKET</Nav.Link>
+
         </Navbar>
     )
 }

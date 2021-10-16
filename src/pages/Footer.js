@@ -6,9 +6,9 @@ const Footer = () => {
      
     return (
         <div className="footer-wrapper">
-            <div>lorem is </div>
-            <p>lorem is not</p>
-            <div>lorem is not eA</div>
+            <div>contact us:08065790939 </div>
+            <div>about us</div>
+            <div>copy-right reserve </div>
         </div>
     )
 }
